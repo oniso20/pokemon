@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+        transform: translateY(-7px)
+    }
+
+    60% {
+        -webkit-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+        transform: translateY(-7px)
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 10px;
+}
+
+li a {
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgba(186, 83, 19, 0.688);
+    color: white;
+    padding: 10px 15px;
+}
+
+li a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+img:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+.poke-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+.pokemon {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pokemon .img-container {
+    background-color: rgb(238, 238, 238, 0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.pokemon .img-container img {
+    max-width: 90%;
+    margin-top: 20px;
+    -webkit-animation-duration: 0.1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.pokemon .img-container img:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.pokemon .info .number {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    border: 1px dotted black;
+}
+
+.pokemon .info .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+}
+
+#pokemonCount {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+input {
+    visibility: hidden;
+    width: 10rem;
+    height: 2rem;
+    padding: 10px 20px;
+}
+
+#poke-symbol {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
