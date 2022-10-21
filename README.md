@@ -8,6 +8,8 @@ This is a simple pokemon site with search functionality based on the Pokemon nam
 
 ## Resources
 
+Here are resources used in building this Pokemon page:
+
 **Pokemon type symbols:** https://commons.wikimedia.org/wiki/Category:Pok%C3%A9mon_types_icons  
 **Pokemon API:** https://pokeapi.co/  
 **Pokemon Generation data:** https://bulbapedia.bulbagarden.net/wiki/Generation
