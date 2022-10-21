@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Cards</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pokedex</h1>
+      <nav>
+        <ul id="tabs">
+          <li id="gen1" value="150"><a href="#">Gen 1</a></li>
+          <li id="gen2"><a href="#">Gen 2</a></li>
+          <li id="gen3"><a href="#">Gen 3</a></li>
+          <li id="gen4"><a href="#">Gen 4</a></li>
+          <li id="gen5"><a href="#">Gen 5</a></li>
+          <li id="gen6"><a href="#">Gen 6</a></li>
+          <li id="gen7"><a href="#">Gen 7</a></li>
+          <li id="gen8"><a href="#">Gen 8</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="top-text">
+      <p id="pokemonCount"></p>
+      <input
+        id="searchByName"
+        type="search"
+        oninput="findPokemon()"
+        placeholder="search pokemon by name"
+      />
+    </div>
+    <main class="poke-container" id="poke-container">
+      <!-- <div class="pokemon" style="background-color: rgb(222, 253, 224)">
+        <div class="img-container">
+          <img
+            src="https://images.unsplash.com/photo-1609845768806-767fcfc317b6"
+            alt="Pokemon image"
+          />
+        </div>
+        <div class="info">
+          <span class="number">#001</span>
+          <h3 class="name">Pikachut</h3>
+          <small class="type">Type: <span>grass</span></small>
+        </div>
+      </div>
+      <div class="pokemon" style="background-color: rgb(222, 253, 224)">
+        <div class="img-container">
+          <img
+            src="https://images.unsplash.com/photo-1609845768806-767fcfc317b6"
+            alt="Pokemon image"
+          />
+        </div>
+        <div class="info">
+          <span class="number">#001</span>
+          <h3 class="name">Pikachut</h3>
+          <small class="type">Type: <span>grass</span></small>
+        </div>
+      </div>
+      <div class="pokemon" style="background-color: rgb(222, 253, 224)">
+        <div class="img-container">
+          <img
+            src="https://images.unsplash.com/photo-1609845768806-767fcfc317b6"
+            alt="Pokemon image"
+          />
+        </div>
+        <div class="info">
+          <span class="number">#001</span>
+          <h3 class="name">Pikachut</h3>
+          <small class="type">Type: <span>grass</span></small>
+        </div>
+      </div> -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
